@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+#include "stdio.h"
+
+int main()
+{
+	char a[100];
+	char b[100];
+
+	fflush(stdin);fflush(stdout);
+	printf("Enter array size: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+
+	fflush(stdin);fflush(stdout);
+	printf("Enter array elements: ");
+	return 0;
+}
+

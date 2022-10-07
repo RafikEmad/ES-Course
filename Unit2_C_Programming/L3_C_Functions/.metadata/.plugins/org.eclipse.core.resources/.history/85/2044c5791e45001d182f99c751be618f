@@ -1,0 +1,48 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+
+
+#include "stdio.h"
+
+void Prime_numbers(int a,int b);
+
+int main()
+{
+	int a, b;
+	fflush(stdin);	fflush(stdout);
+	printf("Enter two numbers (intervals): ");
+
+	fflush(stdin);	fflush(stdout);
+	scanf("%d%d",&a,&b);
+
+	Prime_numbers(a,b);
+
+	return 0;
+}
+
+void Prime_numbers(int a,int b)
+{
+	int z[100];
+
+	printf("Prime numbers between 10 and 30 are: ");
+
+	for (int i=a,x=0;i<=b;i++,x++)
+	{
+
+			z[x]=i;
+			printf("%d  ",z[x]);
+
+		/*if (i%2!=0)
+		{
+			for (int x=2;x<i;x++)
+			{
+				z[x-2]=x;
+				printf("%d  ",z[x-2]);
+			}
+		}*/
+	}
+}

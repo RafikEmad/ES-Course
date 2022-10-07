@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 4, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	int n;
+	printf("Maximum no. of inputs \n ");
+	scanf("%d",&n);
+	for (int i=0;i<n;i++)
+	{
+
+	}
+}

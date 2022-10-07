@@ -1,0 +1,546 @@
+08:11:36 **** Rebuild of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+08:15:27 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+08:23:52 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Swap_Arrays':
+..\main.c:63:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  c=&a;
+   ^
+..\main.c:64:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  a=&b;
+   ^
+..\main.c:65:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  b=&a;
+   ^
+..\main.c:62:6: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+  int*c;
+      ^
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+08:25:23 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Swap_Arrays':
+..\main.c:63:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  c=&a;
+   ^
+..\main.c:64:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  a=&b;
+   ^
+..\main.c:62:7: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+  int *c;
+       ^
+gcc -o Q2_Swap_Arrays.exe main.o 
+08:25:31 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Swap_Arrays':
+..\main.c:63:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  c=&a;
+   ^
+..\main.c:64:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  a=&b;
+   ^
+..\main.c:65:3: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  b=&a;
+   ^
+..\main.c:62:7: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+  int* c;
+       ^
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+08:25:45 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Swap_Arrays':
+..\main.c:62:7: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+  int* c;
+       ^
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+08:44:56 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:28:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",a[i]);
+           ^
+..\main.c:42:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",b[i]);
+           ^
+gcc -o Q2_Swap_Arrays.exe main.o 
+08:45:22 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+08:46:42 **** Incremental Build of configuration Debug for project Q2_Swap_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Swap_Arrays.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q2_Swap_Arrays
+08:56:56 **** Rebuild of configuration Debug for project Q3_Reverse_Array ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:31:2: error: too many arguments to function 'Reverse_Array'
+  Reverse_Array(a,x);
+  ^~~~~~~~~~~~~
+..\main.c:11:6: note: declared here
+ void Reverse_Array(int a[]);
+      ^~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:34:6: error: conflicting types for 'Reverse_Array'
+ void Reverse_Array(int a[],int size)
+      ^~~~~~~~~~~~~
+..\main.c:11:6: note: previous declaration of 'Reverse_Array' was here
+ void Reverse_Array(int a[]);
+      ^~~~~~~~~~~~~
+Info: Nothing to build for Q2_Swap_Arrays
+08:57:18 **** Incremental Build of configuration Debug for project Q3_Reverse_Array ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q3_Reverse_Array.exe main.o 
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q2_Swap_Arrays
+08:58:20 **** Incremental Build of configuration Debug for project Q3_Reverse_Array ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q3_Reverse_Array.exe main.o 
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q2_Swap_Arrays
+08:59:37 **** Incremental Build of configuration Debug for project Q3_Reverse_Array ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q3_Reverse_Array.exe main.o 
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:26:10 **** Rebuild of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:37: error: unknown type name 'num'
+ int Last_Occurence(int a[],int size,num);
+                                     ^~~
+..\main.c: In function 'main':
+..\main.c:34:2: warning: implicit declaration of function 'Last_Occurence' [-Wimplicit-function-declaration]
+  Last_Occurence(a,x);
+  ^~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:37:38: error: unknown type name 'num'
+ void Last_Occurence(int a[],int size,num)
+                                      ^~~
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:26:20 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:37: error: unknown type name 'num'
+ int Last_Occurence(int a[],int size,num);
+                                     ^~~
+..\main.c: In function 'main':
+..\main.c:35:2: warning: implicit declaration of function 'Last_Occurence' [-Wimplicit-function-declaration]
+  Last_Occurence(a,x);
+  ^~~~~~~~~~~~~~
+..\main.c:15:6: warning: unused variable 'num' [-Wunused-variable]
+  int num;
+      ^~~
+..\main.c: At top level:
+..\main.c:38:38: error: unknown type name 'num'
+ void Last_Occurence(int a[],int size,num)
+                                      ^~~
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:26:42 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:1: error: expected ';', ',' or ')' before 'int'
+ int main()
+ ^~~
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:26:55 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:35:2: error: too few arguments to function 'Last_Occurence'
+  Last_Occurence(a,x);
+  ^~~~~~~~~~~~~~
+..\main.c:9:5: note: declared here
+ int Last_Occurence(int a[],int size,int num);
+     ^~~~~~~~~~~~~~
+..\main.c:15:6: warning: unused variable 'num' [-Wunused-variable]
+  int num;
+      ^~~
+..\main.c: At top level:
+..\main.c:38:6: error: conflicting types for 'Last_Occurence'
+ void Last_Occurence(int a[],int size,int num)
+      ^~~~~~~~~~~~~~
+..\main.c:9:5: note: previous declaration of 'Last_Occurence' was here
+ int Last_Occurence(int a[],int size,int num);
+     ^~~~~~~~~~~~~~
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:28:20 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:35:2: error: too few arguments to function 'Last_Occurence'
+  Last_Occurence(a,x);
+  ^~~~~~~~~~~~~~
+..\main.c:9:5: note: declared here
+ int Last_Occurence(int a[],int size,int num);
+     ^~~~~~~~~~~~~~
+..\main.c:15:6: warning: unused variable 'num' [-Wunused-variable]
+  int num;
+      ^~~
+..\main.c: In function 'Last_Occurence':
+..\main.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:28:34 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Last_Occurence':
+..\main.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\main.c: In function 'main':
+..\main.c:35:2: warning: 'num' is used uninitialized in this function [-Wuninitialized]
+  Last_Occurence(a,x,num);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:30:04 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Last_Occurence':
+..\main.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:33:46 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Last_Occurence':
+..\main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:35:03 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Last_Occurence':
+..\main.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:36:03 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:36:45 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:39:18 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:40:08 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q8_Last_Occurence.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q8_Last_Occurence.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:40:12 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:41:11 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q8_Last_Occurence.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q8_Last_Occurence.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:41:14 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+09:42:25 **** Incremental Build of configuration Debug for project Q8_Last_Occurence ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q8_Last_Occurence.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+09:50:08 **** Rebuild of configuration Debug for project Q1_Chechname ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:4: warning: implicit declaration of function 'stricmp' [-Wimplicit-function-declaration]
+  x=stricmp(a,b);
+    ^~~~~~~
+gcc -o Q1_Chechname.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q8_Last_Occurence
+09:50:16 **** Incremental Build of configuration Debug for project Q1_Chechname ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:4: warning: implicit declaration of function 'stricmp' [-Wimplicit-function-declaration]
+  x=stricmp(a,b);
+    ^~~~~~~
+gcc -o Q1_Chechname.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q8_Last_Occurence
+09:50:36 **** Incremental Build of configuration Debug for project Q1_Chechname ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Chechname.exe main.o 
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:16:11 **** Rebuild of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d",num);
+          ^
+..\main.c:18:2: warning: 'num' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d",num);
+  ^~~~~~~~~~~~~~~
+gcc -o Q7_Powerofthree.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:16:18 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q7_Powerofthree.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:16:45 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q7_Powerofthree.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+10:19:02 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q7_Powerofthree.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q7_Powerofthree.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:19:13 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -o Q7_Powerofthree.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q7_Powerofthree.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:19:30 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q7_Powerofthree.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q7_Powerofthree.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Q8_Last_Occurence
+10:19:33 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -o Q7_Powerofthree.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q7_Powerofthree.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:19:47 **** Incremental Build of configuration Debug for project Q7_Powerofthree ****
+Info: Internal Builder is used for build
+gcc -o Q7_Powerofthree.exe main.o 
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:31:32 **** Rebuild of configuration Debug for project Q5_Clearbit ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q5_Clearbit.exe main.o 
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q5_Clearbit
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+10:32:58 **** Incremental Build of configuration Debug for project Q5_Clearbit ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q5_Clearbit.exe main.o 
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q5_Clearbit
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q5_Clearbit
+10:42:29 **** Rebuild of configuration Debug for project Q6_Least_Significant_Bit ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q6_Least_Significant_Bit.exe main.o 
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q6_Least_Significant_Bit
+Info: Nothing to build for Q6_Least_Significant_Bit
+Info: Nothing to build for Q6_Least_Significant_Bit
+Info: Nothing to build for Q1_Chechname
+Info: Nothing to build for Q2_Swap_Arrays
+Info: Nothing to build for Q3_Reverse_Array
+Info: Nothing to build for Q5_Clearbit
+10:43:48 **** Incremental Build of configuration Debug for project Q6_Least_Significant_Bit ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q6_Least_Significant_Bit.exe main.o 
+Info: Nothing to build for Q7_Powerofthree
+Info: Nothing to build for Q8_Last_Occurence
+Info: Nothing to build for Q6_Least_Significant_Bit
+Info: Nothing to build for Q6_Least_Significant_Bit
+Info: Nothing to build for Q6_Least_Significant_Bit

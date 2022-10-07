@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+
+
+#include"stdio.h"
+int main ()
+{
+	int x;
+	int num;
+
+	fflush(stdin);fflush(stdout);
+	printf("Enter number: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&num);
+
+	fflush(stdin);fflush(stdout);
+	printf("Enter bit: ");
+
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+}

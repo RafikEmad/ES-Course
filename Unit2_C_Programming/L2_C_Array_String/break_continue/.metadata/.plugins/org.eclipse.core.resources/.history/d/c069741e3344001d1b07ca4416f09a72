@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 4, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	int n;
+	fflush(stdin);fflush(stdout);
+	printf("Maximum no. of inputs \n ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	for (int i=0;i<n;i++)
+	{
+
+	}
+}

@@ -1,0 +1,720 @@
+06:05:54 **** Rebuild of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+06:11:48 **** Rebuild of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question2.exe main.o 
+Info: Nothing to build for Question2
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question2
+Info: Nothing to build for Question1
+06:14:35 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question2.exe main.o 
+Info: Nothing to build for Question2
+Info: Nothing to build for Question2
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+06:22:47 **** Rebuild of configuration Debug for project Question3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question3.exe main.o 
+Info: Nothing to build for Question3
+06:23:23 **** Incremental Build of configuration Debug for project Question3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question3.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+06:23:56 **** Incremental Build of configuration Debug for project Question3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question3.exe main.o 
+Info: Nothing to build for Question3
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+06:32:08 **** Rebuild of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d",&x);
+          ^
+..\main.c:18:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d is positive.",x);
+            ^
+..\main.c:22:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d is negative.",x);
+            ^
+..\main.c:26:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d is negative.",x);
+            ^
+gcc -o Question4.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+06:32:18 **** Incremental Build of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question4.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+06:32:52 **** Incremental Build of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question4.exe main.o 
+Info: Nothing to build for Question4
+Info: Nothing to build for Question4
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+06:33:55 **** Incremental Build of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question4.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+06:34:08 **** Incremental Build of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+gcc -o Question4.exe main.o 
+Info: Nothing to build for Question4
+Info: Nothing to build for Question4
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+06:47:22 **** Rebuild of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question5.exe main.o 
+Info: Nothing to build for Question5
+Info: Nothing to build for Question5
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+07:02:04 **** Rebuild of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question6.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+07:03:20 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question6.exe main.o 
+Info: Nothing to build for Question6
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+07:08:17 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -ansi- -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc: error: unrecognized command line option '-ansi-'; did you mean '-ansi'?
+07:08:22 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -ansi- -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc: error: unrecognized command line option '-ansi-'; did you mean '-ansi'?
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+07:08:47 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -ansi- -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc: error: unrecognized command line option '-ansi-'; did you mean '-ansi'?
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+07:09:48 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -ansi- -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc: error: unrecognized command line option '-ansi-'; did you mean '-ansi'?
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+07:10:38 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question6.exe main.o 
+Info: Nothing to build for Question6
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:15:56 **** Rebuild of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:27:24 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:29:09 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:30:27 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:30:52 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question7
+Info: Nothing to build for Question7
+07:32:19 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question7.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:32:27 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+07:32:44 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:45:33 **** Rebuild of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:17:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d %d",&a,&b);
+          ^
+..\main.c:17:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'float *' [-Wformat=]
+  scanf("%d %d",&a,&b);
+             ^
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:45:48 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:46:06 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question8
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:46:35 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:46:40 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question8
+07:47:23 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+07:47:56 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:48:33 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+07:48:36 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:48:55 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+07:48:57 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:49:41 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+07:49:43 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:49:50 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question8
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:50:06 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:50:10 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question8.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:50:14 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question8
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+07:50:38 **** Incremental Build of configuration Debug for project Question8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question8.exe main.o 
+Info: Nothing to build for Question8
+Info: Nothing to build for Question8
+Info: Nothing to build for Question8
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+08:24:44 **** Rebuild of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+08:26:13 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+08:36:43 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+08:37:05 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+08:46:03 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:15: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  printf("%d",1<<2+3<<4);
+               ^~
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+Info: Nothing to build for Quiz
+08:46:39 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:15: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  printf("%d",1<<2 + 3<<4);
+               ^~
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+08:51:47 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+08:55:47 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:31:10: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int i=(1,2,3);
+          ^
+..\main.c:31:12: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  int i=(1,2,3);
+            ^
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:09:27 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:34:25: error: lvalue required as increment operand
+  int i=4 ; int j = (++i)++;
+                         ^~
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:09:46 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:35:15: error: lvalue required as increment operand
+  int j = (++i)++;
+               ^~
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:10:02 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+Info: Nothing to build for Quiz
+09:10:15 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:35:15: error: lvalue required as increment operand
+  int j = (++i)++;
+               ^~
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:16:49 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:39:5: warning: operation on 'a' may be undefined [-Wsequence-point]
+  b=a++ + a++;
+    ~^~
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:20:07 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:43:05 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:49:11 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:45:16: error: lvalue required as left operand of assignment
+  char ch = 'a' = 97 ;
+                ^
+..\main.c:47:36: error: duplicate case value
+  { case 97:  printf("97") ; break; case 'a':   printf ("a") ; break;}
+                                    ^~~~
+..\main.c:47:4: error: previously used here
+  { case 97:  printf("97") ; break; case 'a':   printf ("a") ; break;}
+    ^~~~
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:49:43 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:45:16: error: lvalue required as left operand of assignment
+  char ch = 'a' = 97 ;
+                ^
+..\main.c:50:2: error: duplicate case value
+  case 'a':
+  ^~~~
+..\main.c:47:4: error: previously used here
+  { case 97:
+    ^~~~
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question8
+09:59:25 **** Incremental Build of configuration Debug for project Quiz ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:46:22: warning: operation on 'i' may be undefined [-Wsequence-point]
+  printf("%d %d",++i,i++);
+                     ~^~
+gcc -o Quiz.exe main.o 
+Info: Nothing to build for Quiz

@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 3, 2022
+ *      Author: rafik
+ */
+
+
+#include "stdio.h"
+
+int main()
+{
+	int x,factorial=1;
+	printf("Enter an integer: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+	for (int i=1;i<=x;i++)
+	{
+		factorial=factorial*x;
+		x=x-1;
+	}
+	printf("Factorial= %d",factorial);
+return 0;
+}

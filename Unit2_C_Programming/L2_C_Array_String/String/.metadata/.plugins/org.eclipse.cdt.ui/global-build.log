@@ -1,0 +1,166 @@
+04:08:47 **** Rebuild of configuration Debug for project Q1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:2: error: too few arguments to function 'gets'
+  gets();
+  ^~~~
+In file included from ..\main.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:27:17: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  for (int i=0;i<strlen(a);i++)
+                 ^~~~~~
+..\main.c:27:17: warning: incompatible implicit declaration of built-in function 'strlen'
+..\main.c:27:17: note: include '<string.h>' or provide a declaration of 'strlen'
+04:09:05 **** Incremental Build of configuration Debug for project Q1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:2: error: too few arguments to function 'gets'
+  gets();
+  ^~~~
+In file included from ..\main.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+04:09:24 **** Incremental Build of configuration Debug for project Q1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1.exe main.o 
+Info: Nothing to build for Q1
+Info: Nothing to build for Q1
+Info: Nothing to build for Q1
+Info: Nothing to build for Q1
+Info: Nothing to build for Q1
+04:10:07 **** Incremental Build of configuration Debug for project Q1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+04:10:13 **** Incremental Build of configuration Debug for project Q1 ****
+Info: Internal Builder is used for build
+gcc -o Q1.exe main.o 
+Info: Nothing to build for Q1
+Info: Nothing to build for Q1
+04:21:45 **** Rebuild of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:16:7: warning: 'a[0]' is used uninitialized in this function [-Wuninitialized]
+  char i=a[0];
+       ^
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q1
+04:22:05 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:24:57 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:10: warning: array subscript has type 'char' [-Wchar-subscripts]
+  while (a[i]!=0)
+          ^
+gcc -o Q2.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Q2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Q1
+04:25:01 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:25:36 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:10: warning: array subscript has type 'char' [-Wchar-subscripts]
+  while (a[i]!='\0')
+          ^
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q1
+Info: Nothing to build for Q2
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:27:49 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:24:7: warning: unused variable 'x' [-Wunused-variable]
+  char x;
+       ^
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q1
+04:28:03 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:28:23 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:35:07 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:16:6: warning: unused variable 'length' [-Wunused-variable]
+  int length=0;
+      ^~~~~~
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q3
+Info: Nothing to build for Q1
+Info: Nothing to build for Q2
+Info: Nothing to build for Q3
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:35:40 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:16:6: warning: unused variable 'length' [-Wunused-variable]
+  int length=0;
+      ^~~~~~
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q3
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+Info: Nothing to build for Q2
+Info: Nothing to build for Q3
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:38:37 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q3
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:39:27 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q3
+Info: Nothing to build for Q2
+Info: Nothing to build for Q1
+04:39:48 **** Incremental Build of configuration Debug for project Q2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2.exe main.o 
+Info: Nothing to build for Q3
+Info: Nothing to build for Q2

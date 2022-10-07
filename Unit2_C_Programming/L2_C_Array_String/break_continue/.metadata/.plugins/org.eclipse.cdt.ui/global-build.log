@@ -1,0 +1,164 @@
+00:18:38 **** Rebuild of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:13:2: warning: 'n' is used uninitialized in this function [-Wuninitialized]
+  printf("Maximum no. of inputs /r/n %d",n);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+00:19:46 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+00:20:37 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:20:51 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -o Question1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:20:56 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+00:21:31 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:13:2: warning: 'n' is used uninitialized in this function [-Wuninitialized]
+  printf("Maximum no. of inputs \n %d",n);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:21:47 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:21:51 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+00:22:29 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:22:33 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+00:22:50 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:22:53 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:23:09 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:30:56 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:8: warning: variable 'Average' set but not used [-Wunused-but-set-variable]
+  float Average=0,sum=0;
+        ^~~~~~~
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:32:10 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:8: warning: variable 'Average' set but not used [-Wunused-but-set-variable]
+  float Average=0,sum=0;
+        ^~~~~~~
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:32:33 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:8: warning: variable 'Average' set but not used [-Wunused-but-set-variable]
+  float Average=0,sum=0;
+        ^~~~~~~
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:34:04 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:35:50 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:37:21 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:37:41 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:42:17 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+00:42:57 **** Incremental Build of configuration Debug for project Question1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question1.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question1
+00:50:41 **** Rebuild of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question2.exe main.o 
+Info: Nothing to build for Question2
+Info: Nothing to build for Question1
+00:52:02 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question2.exe main.o 
+Info: Nothing to build for Question2
+Info: Nothing to build for Question1
+00:52:37 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:11: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+   scanf("%f",&num);
+           ^
+gcc -o Question2.exe main.o 
+Info: Nothing to build for Question1
+00:52:49 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question2.exe main.o 
+Info: Nothing to build for Question2

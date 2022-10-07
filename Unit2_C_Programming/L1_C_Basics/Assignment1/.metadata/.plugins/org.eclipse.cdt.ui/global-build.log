@@ -1,0 +1,95 @@
+Info: Nothing to build for Question5
+05:25:17 **** Incremental Build of configuration Release for project Question5 ****
+Info: Internal Builder is used for build
+gcc -O3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question5.exe main.o 
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+05:25:56 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question5.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question5.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+05:26:36 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -o Question5.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question5.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question6
+05:26:36 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question7.exe main.o 
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+05:27:37 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -o Question5.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question5.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+05:28:14 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -o Question5.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question5.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+05:28:32 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Question5.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question5.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+05:28:37 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -o Question5.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Question5.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+05:30:22 **** Incremental Build of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+gcc -o Question5.exe main.o 
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7
+Info: Nothing to build for Question1
+Info: Nothing to build for Question2
+Info: Nothing to build for Question3
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+Info: Nothing to build for Question6
+Info: Nothing to build for Question7

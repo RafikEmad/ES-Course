@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 3, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	int x;
+	printf("Enter a number: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+	if (x>0)
+	{
+		printf("%d is positive.",x);
+	}
+	else if (x<0)
+	{
+		printf("%d is negative.",x);
+	}
+	else
+	{
+		printf("%d is negative.",x);
+	}
+
+return 0;
+}
+

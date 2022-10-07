@@ -1,0 +1,10 @@
+LaunchTargetManager/configs/Q1_Primenumbers.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Q2_Recursive_Factorial.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Q4_Power.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Q1_Primenumbers.exe,org.eclipse.launchbar.core.descriptorType.default\:Q2_Recursive_Factorial.exe,org.eclipse.launchbar.core.descriptorType.default\:Q3_Sentence_Reverse.exe,org.eclipse.launchbar.core.descriptorType.default\:Q4_Power.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Q1_Primenumbers.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Q1_Primenumbers.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

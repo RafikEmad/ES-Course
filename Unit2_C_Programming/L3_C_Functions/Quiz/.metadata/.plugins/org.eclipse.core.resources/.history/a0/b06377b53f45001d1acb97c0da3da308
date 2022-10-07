@@ -1,0 +1,77 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+void Swap_Arrays(int*a,int*b,int asize,int bsize);
+
+int main()
+{
+	int a[5]={0,2,4,6,8};
+	int b[4]={1,3,5,7};
+
+	int asize =5;
+	int bsize =3;
+
+	Swap_Arrays(a,b,asize,bsize);
+
+	return 0;
+}
+
+void Swap_Arrays(int*a,int*b,int asize,int bsize)
+{
+	/*int s;
+	int l;
+
+	if (asize<bsize)
+	{
+		s=asize;
+		l=bsize;
+	}
+	else
+	{
+		s=bsize;
+		l=asize;
+	}
+	for (int i=0;i<s;i++)
+	{
+		a[i]=a[i]^b[i];
+		b[i]=a[i]^b[i];
+		a[i]=a[i]^b[i];
+	}
+	for (int i=s;i<l;i++)
+	{
+		if (asize<bsize)
+			a[i]=b[i];
+		else
+			b[i]=a[i];
+	}
+	for (int i=0;i<bsize;i++)
+	{
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+	for (int i=0;i<asize;i++)
+	{
+		printf("%d ",b[i]);
+	}*/
+	int* c;
+	c=&a;
+	a=&b;
+	b=&a;
+
+	for (int i=0;i<bsize;i++)
+	{
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+	for (int i=0;i<asize;i++)
+	{
+		printf("%d ",b[i]);
+	}
+
+}

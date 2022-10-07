@@ -1,0 +1,34 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 4, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	int n;
+	fflush(stdin);fflush(stdout);
+	printf("Maximum no. of inputs \n");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	float a[n];
+	float Average=0,sum=0;
+	for (int i=0;i<n;i++)
+	{
+		fflush(stdin);fflush(stdout);
+		printf("Enter n%d: ",i+1);
+		fflush(stdin);fflush(stdout);
+		scanf("%f",&a[n]);
+		if (a[n]>=0)
+		{
+			sum=sum+a[n];
+		}
+		else
+			break;
+	}
+	Average=sum/n;
+	printf("Average=%0.2f",Average);
+}

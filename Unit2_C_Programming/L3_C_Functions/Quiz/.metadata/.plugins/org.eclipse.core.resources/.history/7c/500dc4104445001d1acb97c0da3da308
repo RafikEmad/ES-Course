@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+
+
+#include "stdio.h"
+
+void Reverse_Array(int a[]);
+
+int main()
+{
+	int a[10];
+	int b[10];
+	int x;
+	int y;
+
+	fflush(stdin);fflush(stdout);
+	printf("Enter 1st array size: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+
+	fflush(stdin);fflush(stdout);
+	printf("Enter 1st array elements: ");
+}
+
+void Reverse_Array(int a[])
+{
+
+}

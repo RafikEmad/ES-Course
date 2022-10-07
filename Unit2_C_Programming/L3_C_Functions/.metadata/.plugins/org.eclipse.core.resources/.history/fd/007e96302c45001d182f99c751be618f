@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+int Power(int a);
+
+int main()
+{
+	fflush(stdin);	fflush(stdout);
+	printf("Enter base number: ");
+
+	fflush(stdin);	fflush(stdout);
+
+	Sentence_Reverse();
+
+	return 0;
+}
+
+int Sentence_Reverse(int a)
+{
+	char c;
+
+	scanf("%c",&c);
+
+	if (c!='\n')
+	{
+		Sentence_Reverse();
+		printf("%c",c);
+	}
+}
+

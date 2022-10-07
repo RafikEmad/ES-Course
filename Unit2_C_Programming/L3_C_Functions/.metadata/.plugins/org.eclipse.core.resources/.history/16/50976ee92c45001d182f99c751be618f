@@ -1,0 +1,45 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2022
+ *      Author: rafik
+ */
+
+#include "stdio.h"
+
+int Power(int b ,int p);
+
+int main()
+{
+	int base;
+	int power;
+
+	fflush(stdin);	fflush(stdout);
+	printf("Enter base number: ");
+
+	fflush(stdin);	fflush(stdout);
+	scanf("%d",&base);
+
+	fflush(stdin);	fflush(stdout);
+	printf("Enter power number (positive number): ");
+
+	fflush(stdin);	fflush(stdout);
+	scanf("%d",&power);
+
+
+	return 0;
+}
+
+int Sentence_Reverse(int b , int p)
+{
+	char c;
+
+	scanf("%c",&c);
+
+	if (c!='\n')
+	{
+		Sentence_Reverse();
+		printf("%c",c);
+	}
+}
+

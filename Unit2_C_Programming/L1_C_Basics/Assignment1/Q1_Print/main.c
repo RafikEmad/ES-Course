@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 3, 2022
+ *      Author: rafik
+ */
+#include "stdio.h"
+
+int main()
+{
+	printf("C Programming");
+	return 0;
+}

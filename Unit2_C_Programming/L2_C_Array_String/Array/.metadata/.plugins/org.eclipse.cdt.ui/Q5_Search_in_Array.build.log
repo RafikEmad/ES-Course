@@ -1,0 +1,7 @@
+00:18:43 **** Rebuild of configuration Debug for project Q5_Search_in_Array ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q5_Search_in_Array.exe main.o 
+
+00:18:43 Build Finished. 0 errors, 0 warnings. (took 423ms)
+

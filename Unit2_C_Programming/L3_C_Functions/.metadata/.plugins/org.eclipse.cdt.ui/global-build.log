@@ -1,0 +1,343 @@
+04:21:51 **** Rebuild of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:43:6: error: subscripted value is neither array nor pointer nor vector
+     a[x-2]=x;
+      ^
+..\main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+     printf("%d  ",a[x-2]);
+                    ^
+..\main.c:29:6: warning: unused variable 'z' [-Wunused-variable]
+  int z[100];
+      ^
+04:22:07 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+     printf("%d  ",a[x-2]);
+                    ^
+..\main.c:29:6: warning: variable 'z' set but not used [-Wunused-but-set-variable]
+  int z[100];
+      ^
+04:22:20 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:23:19 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:27:54 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:46:15 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:49:24: error: lvalue required as increment operand
+    for(int x=0;x<z[i];z++)
+                        ^~
+04:46:38 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:47:46 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:49:06 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:50:32 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:50:55 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:53:01 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+04:57:03 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:09:36 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:89:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\main.c:31:6: warning: unused variable 'flag' [-Wunused-variable]
+  int flag=1;
+      ^~~~
+..\main.c:30:6: warning: unused variable 'v' [-Wunused-variable]
+  int v[100];
+      ^
+05:09:48 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:39:3: error: 'z' undeclared (first use in this function)
+   z[x]=i;
+   ^
+..\main.c:39:3: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:89:1: error: expected declaration or statement at end of input
+ }
+ ^
+05:09:55 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:89:1: error: expected declaration or statement at end of input
+ }
+ ^
+05:10:20 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:89:1: error: expected declaration or statement at end of input
+ }
+ ^
+05:10:56 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:89:1: error: expected declaration or statement at end of input
+ }
+ ^
+05:11:02 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_numbers':
+..\main.c:89:1: error: expected declaration or statement at end of input
+ }
+ ^
+05:11:49 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:12:23 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:13:28 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:14:13 **** Incremental Build of configuration Debug for project Q1_Primenumbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q1_Primenumbers.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q1_Primenumbers
+05:22:20 **** Rebuild of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:23:34: error: too few arguments to function 'factorial'
+  printf("Factorial of %d = %d",a,factorial(a));
+                                  ^~~~~~~~~
+..\main.c:11:5: note: declared here
+ int factorial(int a,int b);
+     ^~~~~~~~~
+..\main.c: At top level:
+..\main.c:28:5: error: conflicting types for 'factorial'
+ int factorial(int a)
+     ^~~~~~~~~
+..\main.c:11:5: note: previous declaration of 'factorial' was here
+ int factorial(int a,int b);
+     ^~~~~~~~~
+..\main.c: In function 'factorial':
+..\main.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Nothing to build for Q1_Primenumbers
+05:22:42 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'factorial':
+..\main.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:23:32 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'factorial':
+..\main.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:24:44 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+05:25:30 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+05:33:02 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+05:33:56 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+05:34:11 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+05:38:36 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'factorial':
+..\main.c:36:22: warning: operation on 'a' may be undefined [-Wsequence-point]
+   return a*factorial(--a);
+                      ^~~
+..\main.c:30:6: warning: unused variable 'f' [-Wunused-variable]
+  int f=1;
+      ^
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:38:41 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'factorial':
+..\main.c:36:22: warning: operation on 'a' may be undefined [-Wsequence-point]
+   return a*factorial(--a);
+                      ^~~
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:39:18 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'factorial':
+..\main.c:36:23: warning: operation on 'a' may be undefined [-Wsequence-point]
+   return a*factorial(a--);
+                      ~^~
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:39:49 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'factorial':
+..\main.c:35:5: warning: 'b' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  { b--;
+    ~^~
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+05:40:02 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+05:40:53 **** Incremental Build of configuration Debug for project Q2_Recursive_Factorial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q2_Recursive_Factorial.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q2_Recursive_Factorial
+05:58:50 **** Rebuild of configuration Debug for project Q3_Sentence_Reverse ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:2: error: too few arguments to function 'Sentence_Reverse'
+  Sentence_Reverse();
+  ^~~~~~~~~~~~~~~~
+..\main.c:11:5: note: declared here
+ int Sentence_Reverse(char a[]);
+     ^~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:25:6: error: conflicting types for 'Sentence_Reverse'
+ void Sentence_Reverse()
+      ^~~~~~~~~~~~~~~~
+..\main.c:11:5: note: previous declaration of 'Sentence_Reverse' was here
+ int Sentence_Reverse(char a[]);
+     ^~~~~~~~~~~~~~~~
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q2_Recursive_Factorial
+05:59:04 **** Incremental Build of configuration Debug for project Q3_Sentence_Reverse ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:25:6: error: conflicting types for 'Sentence_Reverse'
+ void Sentence_Reverse()
+      ^~~~~~~~~~~~~~~~
+..\main.c:11:5: note: previous declaration of 'Sentence_Reverse' was here
+ int Sentence_Reverse();
+     ^~~~~~~~~~~~~~~~
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q2_Recursive_Factorial
+05:59:14 **** Incremental Build of configuration Debug for project Q3_Sentence_Reverse ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:1: warning: data definition has no type or storage class
+ voidntence_Reverse();
+ ^~~~~~~~~~~~~~~~~~
+..\main.c:11:1: warning: type defaults to 'int' in declaration of 'voidntence_Reverse' [-Wimplicit-int]
+..\main.c: In function 'main':
+..\main.c:20:2: warning: implicit declaration of function 'Sentence_Reverse' [-Wimplicit-function-declaration]
+  Sentence_Reverse();
+  ^~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:25:6: warning: conflicting types for 'Sentence_Reverse'
+ void Sentence_Reverse()
+      ^~~~~~~~~~~~~~~~
+..\main.c:20:2: note: previous implicit declaration of 'Sentence_Reverse' was here
+  Sentence_Reverse();
+  ^~~~~~~~~~~~~~~~
+gcc -o Q3_Sentence_Reverse.exe main.o 
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q2_Recursive_Factorial
+06:00:26 **** Incremental Build of configuration Debug for project Q3_Sentence_Reverse ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q3_Sentence_Reverse.exe main.o 
+Info: Nothing to build for Q3_Sentence_Reverse
+Info: Nothing to build for Q1_Primenumbers
+Info: Nothing to build for Q2_Recursive_Factorial
+Info: Nothing to build for Q3_Sentence_Reverse
+06:11:12 **** Rebuild of configuration Debug for project Q4_Power ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q4_Power.exe main.o 
+Info: Nothing to build for Q4_Power
+Info: Nothing to build for Q4_Power
