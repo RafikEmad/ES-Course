@@ -1,0 +1,4 @@
+﻿  main.c
+D:\Embedded Course\Unit2_C_Programming\L4_C_Structures\Q2_Add_Two_Distances\Q2_Add_Two_Distances\main.c(11,26): warning C4101: 'sum': unreferenced local variable
+D:\Embedded Course\Unit2_C_Programming\L4_C_Structures\Q2_Add_Two_Distances\Q2_Add_Two_Distances\main.c(11,24): warning C4101: 'y': unreferenced local variable
+  Q2_Add_Two_Distances.vcxproj -> D:\Embedded Course\Unit2_C_Programming\L4_C_Structures\Q2_Add_Two_Distances\x64\Debug\Q2_Add_Two_Distances.exe

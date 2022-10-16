@@ -1,0 +1,3 @@
+﻿  main.c
+D:\Embedded Course\Unit2_C_Programming\L4_C_Structures\Q5_Circle_Area\Q5_Circle_Area\main.c(13,9): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Q5_Circle_Area.vcxproj -> D:\Embedded Course\Unit2_C_Programming\L4_C_Structures\Q5_Circle_Area\x64\Debug\Q5_Circle_Area.exe

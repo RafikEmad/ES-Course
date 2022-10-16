@@ -1,0 +1,68 @@
+07:11:04 **** Incremental Build of configuration Debug for project embedded_c1 ****
+make -j8 all 
+arm-none-eabi-size   embedded_c1.elf 
+arm-none-eabi-objcopy  -O ihex  embedded_c1.elf  "embedded_c1.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	embedded_c1.elf
+Finished building: default.size.stdout
+ 
+Finished building: embedded_c1.hex
+ 
+07:20:48 **** Incremental Build of configuration Debug for project embedded_c1 ****
+make -j8 all 
+arm-none-eabi-size   embedded_c1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	embedded_c1.elf
+Finished building: default.size.stdout
+ 
+11:10:38 **** Incremental Build of configuration Debug for project embedded_c1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "embedded_c1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Records\Unit 3\Unit3_lesson1\STM_test\embedded_c1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="embedded_c1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: embedded_c1.elf
+ 
+arm-none-eabi-size   embedded_c1.elf 
+arm-none-eabi-objdump -h -S  embedded_c1.elf  > "embedded_c1.list"
+arm-none-eabi-objcopy  -O ihex  embedded_c1.elf  "embedded_c1.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	embedded_c1.elf
+Finished building: default.size.stdout
+ 
+Finished building: embedded_c1.list
+ 
+Finished building: embedded_c1.hex
+ 
+11:13:53 **** Incremental Build of configuration Debug for project embedded_c1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "embedded_c1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Records\Unit 3\Unit3_lesson1\STM_test\embedded_c1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="embedded_c1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: embedded_c1.elf
+ 
+arm-none-eabi-size   embedded_c1.elf 
+arm-none-eabi-objdump -h -S  embedded_c1.elf  > "embedded_c1.list"
+arm-none-eabi-objcopy  -O ihex  embedded_c1.elf  "embedded_c1.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	embedded_c1.elf
+Finished building: default.size.stdout
+ 
+Finished building: embedded_c1.hex
+Finished building: embedded_c1.list
+ 
+ 
+11:14:06 **** Incremental Build of configuration Debug for project embedded_c1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "embedded_c1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Records\Unit 3\Unit3_lesson1\STM_test\embedded_c1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="embedded_c1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: embedded_c1.elf
+ 
+arm-none-eabi-size   embedded_c1.elf 
+arm-none-eabi-objdump -h -S  embedded_c1.elf  > "embedded_c1.list"
+arm-none-eabi-objcopy  -O ihex  embedded_c1.elf  "embedded_c1.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	embedded_c1.elf
+Finished building: default.size.stdout
+ 
+Finished building: embedded_c1.hex
+Finished building: embedded_c1.list
+ 
+ 

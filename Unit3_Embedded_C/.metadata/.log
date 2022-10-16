@@ -1,0 +1,34 @@
+!SESSION 2022-10-16 03:26:42.834 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-10-16 03:27:53.689
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-10-16 03:27:53.779
+!MESSAGE Log4j initialized with config file D:\Records\Unit 3\Unit3_lesson1\STM_test\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-10-16 03:27:59.058
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-10-16 03:35:18.515
+!MESSAGE Indexed 'embedded_c1' (3 sources, 53 headers) in 1.66 sec: 1,949 declarations; 2,810 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2022-10-16 11:09:20.096 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\Embedded Course\Unit3_Embedded_C\L1_Embedded_C\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\Embedded Course\Unit3_Embedded_C\L1_Embedded_C\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-10-16 11:09:31.923
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-10-16 11:09:32.001
+!MESSAGE Log4j initialized with config file D:\Embedded Course\Unit3_Embedded_C\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-10-16 11:09:38.894
+!MESSAGE Started RMI Server, listening on port 41337

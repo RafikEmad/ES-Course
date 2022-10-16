@@ -1,0 +1,4 @@
+﻿  main.c
+D:\Embedded Course\Unit2_C_Programming\L5_Pointers\Q3_Reverse_String\Q3_Reverse_String\main.c(19,1): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'char (*)[100]'
+D:\Embedded Course\Unit2_C_Programming\L5_Pointers\Q3_Reverse_String\Q3_Reverse_String\main.c(21,1): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'char (*)[100]'
+  Q3_Reverse_String.vcxproj -> D:\Embedded Course\Unit2_C_Programming\L5_Pointers\Q3_Reverse_String\x64\Debug\Q3_Reverse_String.exe

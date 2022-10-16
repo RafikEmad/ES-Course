@@ -1,0 +1,3 @@
+﻿  main.c
+D:\Embedded Course\Unit2_C_Programming\L5_Pointers\Q4_Reverse_Elements\Q4_Reverse_Elements\main.c(12,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int (*)[20]'
+  Q4_Reverse_Elements.vcxproj -> D:\Embedded Course\Unit2_C_Programming\L5_Pointers\Q4_Reverse_Elements\x64\Debug\Q4_Reverse_Elements.exe
