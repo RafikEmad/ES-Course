@@ -1,1 +1,7 @@
-Info: Nothing to build for Q6_Least_Significant_Bit
+17:41:59 **** Rebuild of configuration Debug for project Q6_Least_Significant_Bit ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Q6_Least_Significant_Bit.exe main.o 
+
+17:42:00 Build Finished. 0 errors, 0 warnings. (took 1s.75ms)
+
