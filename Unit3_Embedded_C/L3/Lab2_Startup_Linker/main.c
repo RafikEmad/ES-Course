@@ -18,8 +18,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "Platform_Types.h"
-
+//#include "Platform_Types.h"
+typedef volatile unsigned int vuint32_t;
 //register address
 #define RCC_BASE 	0x40021000
 #define PortA_BASE 	0x40010800
@@ -41,18 +41,21 @@ typedef union{
 }R_ODR_t;
 
 volatile R_ODR_t*	R_ODR =		(volatile R_ODR_t*)(PortA_BASE + 0x0C);
+//unsigned char g_variables[3] = {1,2,3};
+//unsigned char const const_variables[3] = {1,2,3};
 
 int main(void)
 {
+	int i;
 	RCC_APB2ENR |= RCC_IOPAEN;
 	GPIOA_CRH 	&= 0xff0fffff;
 	GPIOA_CRH 	|= 0x00200000;
 	while(1)
 	{
 		R_ODR->Pin.P_13	=	1;
-		for(int i=0;i<5000;i++);
+		for(i=0;i<5000;i++);
 		R_ODR->Pin.P_13	=	0;
-		for(int i=0;i<5000;i++);
+		for(i=0;i<5000;i++);
 	}
 	return 0;
 }
