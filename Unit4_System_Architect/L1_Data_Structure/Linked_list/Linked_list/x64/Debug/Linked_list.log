@@ -1,0 +1,24 @@
+﻿  Linked_list.c
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(41,54): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(44,49): warning C4133: '=': incompatible types - from 'Sstudent *' to 'Sstudeent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(49,9): warning C4013: 'gets' undefined; assuming extern returning int
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(57,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(89,68): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(95,62): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(115,60): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(131,60): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(130,1): warning C4133: 'initializing': incompatible types - from 'Sstudent *' to 'sStudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(158,60): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(174,56): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(190,56): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(204,23): warning C4018: '<': signed/unsigned mismatch
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(206,40): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(210,40): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(211,42): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(224,42): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(225,40): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(228,40): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(244,39): warning C4133: '=': incompatible types - from 'Sstudeent *' to 'Sstudent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(245,43): warning C4133: '=': incompatible types - from 'Sstudent *' to 'Sstudeent *'
+D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\Linked_list\Linked_list.c(100): warning C4715: 'DeleteStudent': not all control paths return a value
+  Linked_list.vcxproj -> D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\Linked_list\x64\Debug\Linked_list.exe
