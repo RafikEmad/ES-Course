@@ -1,4 +1,0 @@
-﻿  fifo.c
-D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\FIFO\FIFO\fifo.c(79,17): warning C4018: '<': signed/unsigned mismatch
-D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\FIFO\FIFO\fifo.c(65): warning C4715: 'FIFO_IS_FULL': not all control paths return a value
-  FIFO.vcxproj -> D:\Embedded Course\Unit4_System_Architect\L1_Data_Structure\FIFO\x64\Debug\FIFO.exe
