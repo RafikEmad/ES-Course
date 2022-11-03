@@ -1,0 +1,10 @@
+﻿  CA.c
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\CA.c(22,65): error C2440: '=': cannot convert from 'void' to 'void (__cdecl *)()'
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\CA.c(22,98): error C2440: '=': cannot convert from 'void' to 'void (__cdecl *)()'
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\CA.c(26,1): error C2084: function 'void ST__statFUN_()' already has a body
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\CA.c(11): message : see previous definition of 'ST__statFUN_'
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\CA.c(37,66): error C2440: '=': cannot convert from 'void' to 'void (__cdecl *)()'
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\CA.c(37,99): error C2440: '=': cannot convert from 'void' to 'void (__cdecl *)()'
+  main.c
+D:\Embedded Course\Unit4_System_Architect\L2_State_Machines\Collision_Avoidance_1\Collision_Avoidance_1\main.c(10,33): error C2440: '=': cannot convert from 'void' to 'void (__cdecl *)()'
+  Generating Code...
