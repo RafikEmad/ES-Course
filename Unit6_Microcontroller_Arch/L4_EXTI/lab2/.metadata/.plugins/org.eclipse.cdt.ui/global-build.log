@@ -1,0 +1,71 @@
+23:15:46 **** Build of configuration Debug for project lab2_unit6_lesson4 ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "lab2_unit6_lesson4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit6_Microcontroller_Arch\L4_EXTI\lab2\lab2_unit6_lesson4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab2_unit6_lesson4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab2_unit6_lesson4.elf
+ 
+arm-none-eabi-size   lab2_unit6_lesson4.elf 
+arm-none-eabi-objdump -h -S  lab2_unit6_lesson4.elf  > "lab2_unit6_lesson4.list"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	lab2_unit6_lesson4.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab2_unit6_lesson4.list
+ 
+23:52:51 **** Incremental Build of configuration Debug for project lab2_unit6_lesson4 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:46:20: error: invalid operands to binary * (have 'int' and 'volatile uint32_t *' {aka 'volatile long unsigned int *'})
+   46 | #define EXTI_RISR  *(volatile uint32_t*)(EXTI_BASE+0x08)
+      |                    ^
+../Src/main.c:82:2: note: in expansion of macro 'EXTI_RISR'
+   82 |  EXTI_RISR |= (1<<0);
+      |  ^~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:54:46 **** Incremental Build of configuration Debug for project lab2_unit6_lesson4 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:79:17: error: expected ';' before 'EXTI_RISR'
+   79 |  AFIO_EXTICR1 =0
+      |                 ^
+      |                 ;
+......
+   82 |  EXTI_RISR |= (1<<0);
+      |  ~~~~~~~~~       
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:54:59 **** Incremental Build of configuration Debug for project lab2_unit6_lesson4 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:82:2: error: 'EXTI_RISR' undeclared (first use in this function); did you mean 'EXTI_IMR'?
+   82 |  EXTI_RISR |= (1<<0);
+      |  ^~~~~~~~~
+      |  EXTI_IMR
+../Src/main.c:82:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:55:14 **** Incremental Build of configuration Debug for project lab2_unit6_lesson4 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab2_unit6_lesson4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit6_Microcontroller_Arch\L4_EXTI\lab2\lab2_unit6_lesson4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab2_unit6_lesson4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab2_unit6_lesson4.elf
+ 
+arm-none-eabi-size   lab2_unit6_lesson4.elf 
+arm-none-eabi-objdump -h -S  lab2_unit6_lesson4.elf  > "lab2_unit6_lesson4.list"
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	lab2_unit6_lesson4.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab2_unit6_lesson4.list
+ 
