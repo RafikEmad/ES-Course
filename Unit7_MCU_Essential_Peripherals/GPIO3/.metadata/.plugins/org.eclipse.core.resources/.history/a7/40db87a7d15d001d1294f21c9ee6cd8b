@@ -1,0 +1,48 @@
+/*
+ * stm32_F103C6_gpio_driver.c
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: rafik
+ */
+#include "stm32_F103C6_gpio_driver.h"
+/**=================================
+ * @Fn			-MCAL_GPIO_Init
+ * @brief		-Initializes the GPIOx PINy according to the specified parameters in the PinConfig
+ * @param[in]	-GPIOx where x can be (A..E depending on the device used) to select the gpio peripheral
+ * @param[in]   -Pinconfig pointer to a GPIO_PinCOnfig_t structure that contains the configuration information for the specified GPIO PIN.
+ * @retval		-none
+ * Note
+ *
+ */
+
+void MCAL_GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_PinConfig_t* PinConfig)
+{
+
+}
+
+/**=================================
+ * @Fn			-MCAL_GPIO_DeInit
+ * @brief		-reset all the GPIO Registers
+ * @param[in]	-GPIOx where x can be (A..E depending on the device used) to select the gpio peripheral
+ * @retval		-none
+ * Note			-none
+ */
+
+void MCAL_GPIO_DeInit (GPIO_TypeDef* GPIOx)
+{
+
+}
+
+/**=================================
+ * @Fn			-MCAL_GPIO_ReadPin
+ * @brief		-Read Specific PIN
+ * @param[in]	-GPIOx where x can be (A..E depending on the device used) to select the gpio peripheral
+ * @retval		-none
+ * Note			-none
+ */
+
+
+uint8_t MCAL_GPIO_ReadPin (GPIO_TypeDef* GPIOx,uint16_t PinNumber)
+{
+
+}

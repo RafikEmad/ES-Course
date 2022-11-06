@@ -1,0 +1,31 @@
+/*
+ * stm32f30x6.h
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: rafik
+ */
+
+#ifndef INC_STM32F30X6_H_
+#define INC_STM32F30X6_H_
+
+//----------------------------
+//Includes
+//----------------------------
+
+#include "stdlib.h"
+#include <stdint.h>
+
+//----------------------------
+//Base addresses for memories
+//----------------------------
+
+#define FLASH_Memory_BASE						0x08000000UL
+#define System_Memory_BASE						0x1FFFF000UL
+#define SRAM_Memory_BASE						0x20000000UL
+
+#define Peripherals_BASE						0x40000000UL
+
+#define Cortex_M3_Internal_Peripherals_BASE		0xE0000000UL
+
+
+#endif /* INC_STM32F30X6_H_ */

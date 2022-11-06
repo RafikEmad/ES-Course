@@ -1,0 +1,24 @@
+/*
+ * stm32_F103C6_gpio_driver.h
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: rafik
+ */
+
+#ifndef INC_STM32_F103C6_GPIO_DRIVER_H_
+#define INC_STM32_F103C6_GPIO_DRIVER_H_
+
+//includes
+#include "stm32f30x6.h"
+
+//-----------------------
+
+//Config Structure
+
+typedef struct
+{
+
+}GPIO_PinConfig_t;
+
+
+#endif /* INC_STM32_F103C6_GPIO_DRIVER_H_ */
