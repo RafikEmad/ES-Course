@@ -1,0 +1,361 @@
+17:18:56 **** Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    864	      8	   1568	   2440	    988	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+17:31:10 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    864	      8	   1568	   2440	    988	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+17:39:06 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+17:44:17 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+17:50:21 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    892	      8	   1568	   2468	    9a4	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+17:52:00 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    912	      8	   1568	   2488	    9b8	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:10:07 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    880	      8	   1568	   2456	    998	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:11:57 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    820	      8	   1568	   2396	    95c	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:12:55 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    896	      8	   1568	   2472	    9a8	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:13:06 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    896	      8	   1568	   2472	    9a8	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+18:16:48 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    896	      8	   1568	   2472	    9a8	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:20:12 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    900	      8	   1568	   2476	    9ac	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:23:04 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    892	      8	   1568	   2468	    9a4	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:25:23 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:27:43 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:28:04 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+18:34:39 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    828	      8	   1568	   2404	    964	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:36:23 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:37:16 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:54:51 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    864	      8	   1568	   2440	    988	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+18:57:03 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    864	      8	   1568	   2440	    988	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+19:08:16 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:103:10: error: unknown type name 'uint32'; did you mean 'uint'?
+  103 |     for (uint32 i = 0; i < 8000; i++) \
+      |          ^~~~~~
+../Src/main.c:124:3: note: in expansion of macro 'delay'
+  124 |   delay
+      |   ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+19:08:51 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    832	      8	   1568	   2408	    968	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+19:10:45 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    772	      8	   1568	   2348	    92c	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+19:11:45 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    832	      8	   1568	   2408	    968	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+19:20:26 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "lab1_unit7_lesson1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO1\Lab1\lab1_unit7_lesson1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_unit7_lesson1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_unit7_lesson1.elf
+ 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+arm-none-eabi-objdump -h -S  lab1_unit7_lesson1.elf  > "lab1_unit7_lesson1.list"
+   text	   data	    bss	    dec	    hex	filename
+    852	      8	   1568	   2428	    97c	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_unit7_lesson1.list
+ 
+19:20:36 **** Incremental Build of configuration Debug for project lab1_unit7_lesson1 ****
+make -j8 all 
+arm-none-eabi-size   lab1_unit7_lesson1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    852	      8	   1568	   2428	    97c	lab1_unit7_lesson1.elf
+Finished building: default.size.stdout
+ 
