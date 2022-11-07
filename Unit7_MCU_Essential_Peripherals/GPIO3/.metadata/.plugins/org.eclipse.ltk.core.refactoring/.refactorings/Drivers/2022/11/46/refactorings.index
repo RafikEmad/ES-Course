@@ -1,0 +1,3 @@
+1667763940807	Move 'keypad.c' to 'HAL'
+1667763950348	Move 'lcd.c' to 'HAL'
+1667764314920	Rename resource 'stm32f30x6.h'

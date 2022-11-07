@@ -235,3 +235,934 @@ Finished building: default.size.stdout
  
 Finished building: Drivers.list
  
+21:48:51 **** Clean-only build of configuration Debug for project Drivers ****
+make -j8 clean 
+rm -rf ./stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d ./stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o ./stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.su
+rm -rf ./Startup/startup_stm32f103c6tx.d ./Startup/startup_stm32f103c6tx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf Drivers.elf Drivers.list Drivers.map default.size.stdout
+ 
+21:48:52 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+In file included from ../HAL/keypad.c:9:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/keypad.h:11:10: fatal error: stm32f103x6.h: No such file or directory
+   11 | #include "stm32f103x6.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../HAL/lcd.c:8:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:12:10: fatal error: stm32f103x6.h: No such file or directory
+   12 | #include "stm32f103x6.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [HAL/subdir.mk:22: HAL/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:49:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+In file included from ../HAL/keypad.c:9:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/keypad.h:11:10: fatal error: stm32f103x6.h: No such file or directory
+   11 | #include "stm32f103x6.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../HAL/lcd.c:8:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:12:10: fatal error: stm32f103x6.h: No such file or directory
+   12 | #include "stm32f103x6.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [HAL/subdir.mk:22: HAL/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:52:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/keypad.c: In function 'Keypad_init':
+../HAL/keypad.c:29:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   29 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:34:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   34 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:39:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   39 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:44:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   44 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:49:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   49 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:54:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   54 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:59:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   59 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:64:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   64 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:20:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   20 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:25:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   25 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:30:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   30 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:37:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   37 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:42:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   42 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:47:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   47 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:52:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   52 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:57:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   57 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:62:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   62 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:67:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   67 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:72:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   72 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+make: *** [HAL/subdir.mk:22: HAL/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:54:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/keypad.c: In function 'Keypad_init':
+../HAL/keypad.c:34:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   34 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:39:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   39 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/keypad.c:44:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   44 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:20:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   20 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:49:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   49 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:25:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   25 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:30:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   30 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:54:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   54 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:37:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   37 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:59:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   59 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:42:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   42 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/keypad.c:64:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   64 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:47:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   47 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:52:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   52 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:57:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   57 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:62:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   62 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:67:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   67 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:72:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   72 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+make: *** [HAL/subdir.mk:22: HAL/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:54:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:20:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   20 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:25:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   25 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:30:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   30 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:37:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   37 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:42:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   42 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:47:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   47 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:52:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   52 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:57:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   57 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:62:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   62 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:67:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   67 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+../HAL/lcd.c:72:8: error: 'GPIO_PinConfig_t' has no member named 'GPIO_Output_Speed'
+   72 |  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+      |        ^
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:55:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1552	      8	   1568	   3128	    c38	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+22:22:13 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:23:15 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:24:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:25:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:29:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:18:2: error: 'PinCfg' undeclared (first use in this function)
+   18 |  PinCfg.GPIO_PinNumber = RS_SWITCH;
+      |  ^~~~~~
+../HAL/lcd.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../HAL/lcd.c: In function 'LCD_check_lcd_isbusy':
+../HAL/lcd.c:123:2: error: 'PinCfg' undeclared (first use in this function)
+  123 |  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+      |  ^~~~~~
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:30:04 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:30:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:31:06 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    564	      8	   1568	   2140	    85c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+22:33:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:33:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:18:2: error: 'PinCfg' undeclared (first use in this function)
+   18 |  PinCfg.GPIO_PinNumber = RS_SWITCH;
+      |  ^~~~~~
+../HAL/lcd.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../HAL/lcd.c: In function 'LCD_check_lcd_isbusy':
+../HAL/lcd.c:123:2: error: 'PinCfg' undeclared (first use in this function)
+  123 |  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+      |  ^~~~~~
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:10:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:11:28 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:11:41 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:18:2: error: 'PinCfg' undeclared (first use in this function)
+   18 |  PinCfg.GPIO_PinNumber = RS_SWITCH;
+      |  ^~~~~~
+../HAL/lcd.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../HAL/lcd.c: In function 'LCD_check_lcd_isbusy':
+../HAL/lcd.c:123:2: error: 'PinCfg' undeclared (first use in this function)
+  123 |  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+      |  ^~~~~~
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:13:30 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:13:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:18:2: error: 'PinCfg' undeclared (first use in this function); did you mean 'PinCfg1'?
+   18 |  PinCfg.GPIO_PinNumber = RS_SWITCH;
+      |  ^~~~~~
+      |  PinCfg1
+../HAL/lcd.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../HAL/lcd.c: In function 'LCD_check_lcd_isbusy':
+../HAL/lcd.c:123:2: error: 'PinCfg' undeclared (first use in this function); did you mean 'PinCfg1'?
+  123 |  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+      |  ^~~~~~
+      |  PinCfg1
+make: *** [HAL/subdir.mk:22: HAL/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:13:41 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:15:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:16:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:17:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:20:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:21:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:23:07 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:24:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: multiple definition of `PinCfg'; ./HAL/lcd.o:D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:44: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:24:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    564	      8	   1568	   2140	    85c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+10:33:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:2: warning: statement with no effect [-Wunused-value]
+  102 |  EXTI_CFG
+      |  ^~~~~~~~
+../Src/main.c:102:10: error: expected ';' before '}' token
+  102 |  EXTI_CFG
+      |          ^
+      |          ;
+  103 | }
+      | ~         
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+10:33:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:101:19: warning: unused variable 'EXTI_CFG' [-Wunused-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    568	      8	   1568	   2144	    860	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+10:34:34 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:101:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+11:39:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c: In function 'MCAL_EXTI_GPIO_DeInit':
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:20:8: error: 'EXTI_TypeDef' has no member named 'RSTR'; did you mean 'RTSR'?
+   20 |  EXTI->RSTR = 0x00000000;
+      |        ^~~~
+      |        RTSR
+In file included from ../Src/main.c:22:
+../Src/main.c: In function 'main':
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:125:35: error: 'EXTI_GPIO_Mapping_t' undeclared (first use in this function); did you mean 'EXTI_GPIO_Maping_t'?
+  125 | #define EXTI9PB9                 (EXTI_GPIO_Mapping_t){EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+      |                                   ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:102:22: note: in expansion of macro 'EXTI9PB9'
+  102 |  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+      |                      ^~~~~~~~
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:125:35: note: each undeclared identifier is reported only once for each function it appears in
+  125 | #define EXTI9PB9                 (EXTI_GPIO_Mapping_t){EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+      |                                   ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:102:22: note: in expansion of macro 'EXTI9PB9'
+  102 |  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+      |                      ^~~~~~~~
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:125:55: error: expected ';' before '{' token
+  125 | #define EXTI9PB9                 (EXTI_GPIO_Mapping_t){EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+      |                                                       ^
+../Src/main.c:102:22: note: in expansion of macro 'EXTI9PB9'
+  102 |  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+      |                      ^~~~~~~~
+../Src/main.c:101:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+make: *** [stm32_F103C6_Drivers/subdir.mk:22: stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+11:40:28 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:
+../Src/main.c: In function 'main':
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:125:35: error: 'EXTI_GPIO_Mapping_t' undeclared (first use in this function); did you mean 'EXTI_GPIO_Maping_t'?
+  125 | #define EXTI9PB9                 (EXTI_GPIO_Mapping_t){EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+      |                                   ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:102:22: note: in expansion of macro 'EXTI9PB9'
+  102 |  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+      |                      ^~~~~~~~
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:125:35: note: each undeclared identifier is reported only once for each function it appears in
+  125 | #define EXTI9PB9                 (EXTI_GPIO_Mapping_t){EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+      |                                   ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:102:22: note: in expansion of macro 'EXTI9PB9'
+  102 |  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+      |                      ^~~~~~~~
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:125:55: error: expected ';' before '{' token
+  125 | #define EXTI9PB9                 (EXTI_GPIO_Mapping_t){EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+      |                                                       ^
+../Src/main.c:102:22: note: in expansion of macro 'EXTI9PB9'
+  102 |  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+      |                      ^~~~~~~~
+../Src/main.c:101:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+11:42:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:101:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+13:28:30 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+In file included from ../Src/main.c:20:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+../Src/main.c: In function 'main':
+../Src/main.c:101:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_gpio_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/keypad.h:11,
+                 from ../HAL/keypad.c:9:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:26:10: warning: unused variable 'AFIO_EXTICR_Position' [-Wunused-variable]
+   26 |  uint8_t AFIO_EXTICR_Position = (EXTI_Config->EXTI_PIN.EXTI_InputLineNumber/4)*4;
+      |          ^~~~~~~~~~~~~~~~~~~~
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:25:10: warning: unused variable 'AFIO_EXTICR_index' [-Wunused-variable]
+   25 |  uint8_t AFIO_EXTICR_index = EXTI_Config->EXTI_PIN.EXTI_InputLineNumber/4;
+      |          ^~~~~~~~~~~~~~~~~
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes/lcd.h:12,
+                 from ../HAL/lcd.c:8:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+13:31:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+13:39:06 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+13:56:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+14:20:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1140	      8	   1624	   2772	    ad4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+14:29:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:76:3: warning: implicit declaration of function 'Enable_NVIC' [-Wimplicit-function-declaration]
+   76 |   Enable_NVIC (EXTI_Config->EXTI_PIN.EXTI_InputLineNumber);
+      |   ^~~~~~~~~~~
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:81:3: warning: implicit declaration of function 'Disable_NVIC' [-Wimplicit-function-declaration]
+   81 |   Disable_NVIC (EXTI_Config->EXTI_PIN.EXTI_InputLineNumber);
+      |   ^~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1140	      8	   1624	   2772	    ad4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+14:43:32 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c: In function 'Enable_NVIC':
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:62:3: error: 'NVIC_IRQ23_EXTI10_15_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ40_EXTI10_15_Enable'?
+   62 |   NVIC_IRQ23_EXTI10_15_Enable;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   NVIC_IRQ40_EXTI10_15_Enable
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:62:3: note: each undeclared identifier is reported only once for each function it appears in
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c: In function 'Disable_NVIC':
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:98:4: error: 'NVIC_IRQ23_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Disable'?
+   98 |    NVIC_IRQ23_EXTI10_15_Disable;
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    NVIC_IRQ23_EXTI5_9_Disable
+make: *** [stm32_F103C6_Drivers/subdir.mk:22: stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:44:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+In file included from D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32_F103C6_EXTI_driver.h:12,
+                 from ../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:7:
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:203: warning: "NVIC_IRQ40_EXTI10_15_Enable" redefined
+  203 | #define NVIC_IRQ40_EXTI10_15_Enable (NVIC_ICER1 |= 1<<8) //40-32=8
+      | 
+D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc/stm32f103x6.h:194: note: this is the location of the previous definition
+  194 | #define NVIC_IRQ40_EXTI10_15_Enable  (NVIC_ISER1 |= 1<<8) //40-32=8
+      | 
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c: In function 'Disable_NVIC':
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:98:4: error: 'NVIC_IRQ40_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ40_EXTI10_15_Enable'?
+   98 |    NVIC_IRQ40_EXTI10_15_Disable;
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    NVIC_IRQ40_EXTI10_15_Enable
+../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c:98:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [stm32_F103C6_Drivers/subdir.mk:22: stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:45:49 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.d" -MT"stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32_F103C6_Drivers/stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:101:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  101 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1140	      8	   1624	   2772	    ad4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+14:50:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:114:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  114 |  EXTI_PinConfig_t EXTI_CFG;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   2488	      8	   1632	   4128	   1020	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+14:52:47 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:32:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before numeric constant
+   32 | unsigned int IRQ_Flag 0;
+      |                       ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:53:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3472	      8	   1632	   5112	   13f8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+14:55:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3764	      8	   1632	   5404	   151c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 

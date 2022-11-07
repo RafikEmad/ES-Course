@@ -17,22 +17,29 @@
  */
 
 #include <stdint.h>
-
-#include "stm32f30x6.h"
+#include "stm32f103x6.h"
 #include "stm32_F103C6_gpio_driver.h"
+#include "stm32_F103C6_EXTI_driver.h"
+#include "lcd.h"
+#include "keypad.h"
+
+
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
-void clock_init()
+unsigned int IRQ_Flag=0;
+
+/*void clock_init()
 {
 	//enable clock gpioA
 	RCC_GPIOA_CLK_EN();
 	//enable clock gpioB
 	RCC_GPIOB_CLK_EN();
-}
+}*/
 
+/*
 void GPIO_init()
 {
 	GPIO_PinConfig_t PinCfg;
@@ -63,14 +70,25 @@ void GPIO_init()
 	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
 	MCAL_GPIO_Init(GPIOB, &PinCfg);
 }
+*/
+
 void wait_ms(int x){
 	int i,j;
 	for(i=0;i<x;i++)
 		for(j=0;j<255;j++);
 }
+void EXTI9_Callback(void)
+{
+	IRQ_Flag =1;
+	LCD_WRITE_STRING("IRQ EXTI9 is happened ");
+	wait_ms(1000);
+}
+
 int main(void)
 {
-	clock_init();
+	//============================================================
+	//unit7-lesson3
+	/*clock_init();
 	GPIO_init();
 
 	while(1)
@@ -87,6 +105,34 @@ int main(void)
 			MCAL_GPIO_TogglePin(GPIOB, GPIO_PIN_13);
 		}
 		wait_ms(1);
+	}*/
+	//===============================================================
+	//unit7-lesson4
+	//enable clock
+	RCC_GPIOA_CLK_EN();
+	RCC_GPIOB_CLK_EN();
+	AFIO_CLK_EN();
+
+	LCD_INIT();
+	LCD_clear_screen();
+
+	EXTI_PinConfig_t EXTI_CFG;
+	EXTI_CFG.EXTI_PIN = EXTI9PB9;
+	EXTI_CFG.Trigger_case = EXTI_Trigger_RISING;
+	EXTI_CFG.P_IRQ_CallBack = EXTI9_Callback;
+	EXTI_CFG.IRQ_EN = EXTI_IRQ_Enable;
+
+	MCAL_EXTI_GPIO_Init(&EXTI_CFG);
+	IRQ_Flag = 1;
+	while(1)
+	{
+		if (IRQ_Flag)
+		{
+			LCD_clear_screen();
+			IRQ_Flag = 0;
+		}
+
 	}
+
 
 }

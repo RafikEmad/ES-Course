@@ -1,17 +1,17 @@
-18:37:31 **** Incremental Build of configuration Debug for project Drivers ****
+14:55:55 **** Incremental Build of configuration Debug for project Drivers ****
 make -j8 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/HAL/includes" -I../Inc -I"D:/Embedded Course/Unit7_MCU_Essential_Peripherals/GPIO3/Drivers/stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Course\Unit7_MCU_Essential_Peripherals\GPIO3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Drivers.elf
  
 arm-none-eabi-size   Drivers.elf 
 arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   1552	      8	   1568	   3128	    c38	Drivers.elf
+   3764	      8	   1632	   5404	   151c	Drivers.elf
 Finished building: default.size.stdout
  
 Finished building: Drivers.list
  
 
-18:37:31 Build Finished. 0 errors, 0 warnings. (took 494ms)
+14:55:56 Build Finished. 0 errors, 0 warnings. (took 546ms)
 

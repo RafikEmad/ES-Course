@@ -9,7 +9,7 @@
 #define INC_STM32_F103C6_GPIO_DRIVER_H_
 
 //includes
-#include "stm32f30x6.h"
+#include "stm32f103x6.h"
 
 //-----------------------
 

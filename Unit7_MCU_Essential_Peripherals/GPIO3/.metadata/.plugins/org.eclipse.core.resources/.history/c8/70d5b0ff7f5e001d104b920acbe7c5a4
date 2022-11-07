@@ -1,0 +1,17 @@
+/*
+ * stm32_F103C6_EXTI_driver.c
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: rafik
+ */
+
+
+/**=================================
+ * @Fn			-MCAL_EXTI_GPIO_DeInit
+ * @brief		-reset EXTI Registers and NVIC Corresponding IRQ Mask
+ * @retval		-none
+ * Note
+ */
+void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+void MCAL_EXTI_GPIO_DeInit(void);
+void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config);
